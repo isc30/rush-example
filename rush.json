@@ -62,7 +62,7 @@
      * The default value is false to avoid legacy compatibility issues.
      * It is strongly recommended to set strictPeerDependencies=true.
      */
-    "strictPeerDependencies": true,
+    "strictPeerDependencies": true
 
     /**
      * Configures the strategy used to select versions during installation.
@@ -147,7 +147,7 @@
    * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
    * section of the common-versions.json.
    */
-  // "ensureConsistentVersions": true,
+  "ensureConsistentVersions": true,
 
   /**
    * Large monorepos can become intimidating for newcomers if project folder paths don't follow
@@ -213,7 +213,7 @@
       "production", // projects that ship to production
       "tools", // non-shipping projects that are part of the developer toolchain
       "prototypes" // experiments that should mostly be ignored by the review process
-    ],
+    ]
 
     /**
      * A list of NPM package scopes that will be excluded from review.
@@ -241,8 +241,8 @@
      * RegExp escapes need two backspashes, and ordinary periods should be "\\.".
      */
     "allowedEmailRegExps": [
-      "[^@]+@users\\.noreply\\.github\\.com",
-      "travis@example\\.org"
+      // "[^@]+@users\\.noreply\\.github\\.com",
+      // "travis@example\\.org"
     ],
 
     /**
@@ -428,6 +428,7 @@
     {
       "packageName": "my-controls",
       "projectFolder": "libraries/my-controls",
+      "shouldPublish": true,
       "reviewCategory": "production"
     },
 

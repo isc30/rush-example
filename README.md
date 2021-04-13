@@ -24,6 +24,14 @@ rush build
 
 For more information, see the documentation at:  https://rushjs.io/
 
+# Respin
+
+after pull, always run
+
+```
+rush install
+rush check
+```
 
 # Contributing
 
